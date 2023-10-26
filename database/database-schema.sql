@@ -44,7 +44,7 @@ DROP TABLE IF EXISTS artists;
 CREATE TABLE artists(
   artist_id int AUTO_INCREMENT PRIMARY KEY,
   artistName VARCHAR(100) NOT NULL,
-  artistGenre VARCHAR(100) NOT NULL,
+  artistGenre VARCHAR(100) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 DROP TABLE IF EXISTS albums;

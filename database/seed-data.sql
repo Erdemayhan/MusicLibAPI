@@ -26,13 +26,13 @@ VALUES (3, "Jim", "Bloggs" , "jimbloggs@yahoo.com", SHA2(CONCAT("password","SUPE
 
 
 
-INSERT INTO Artists (artistName, artistGenre)
+INSERT INTO artists (artistName, artistGenre)
 VALUES ("Kanye West", "Hip Hop");
 
-INSERT INTO Artists (artistName, artistGenre)
+INSERT INTO artists (artistName, artistGenre)
 VALUES ("FireBoy DML", "Afro Pop");
 
-INSERT INTO Artists (artistName, artistGenre)
+INSERT INTO artists (artistName, artistGenre)
 VALUES ("Frank Ocean", "Rnb");
 
 

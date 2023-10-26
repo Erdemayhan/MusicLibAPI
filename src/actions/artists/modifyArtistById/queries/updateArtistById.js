@@ -18,7 +18,7 @@ const updateArtistById = ({
   if (updates.length !== 0) {
     return submitQuery`
    UPDATE
-     Artists
+     artists
    SET
      ${updates.reduce(sqlReduce)}
    WHERE

@@ -1,7 +1,7 @@
 const { submitQuery, camelKeys } = require("~root/lib/database");
 
 const selectAllArtists = () => submitQuery`
-    SELECT * FROM Artists;
+    SELECT * FROM artists;
 `;
 
 module.exports = camelKeys(selectAllArtists);
