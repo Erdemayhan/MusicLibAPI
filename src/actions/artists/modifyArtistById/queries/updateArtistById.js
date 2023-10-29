@@ -8,11 +8,11 @@ const updateArtistById = ({
   const updates = [];
 
   if (artistName !== null) {
-    updates.push(sql`artistName = ${artistName}`);
+    updates.push(sql`artist_name = ${artistName}`);
   }
 
   if (artistGenre !== null) {
-    updates.push(sql`artistGenre = ${artistGenre}`);
+    updates.push(sql`artist_genre = ${artistGenre}`);
   }
 
   if (updates.length !== 0) {

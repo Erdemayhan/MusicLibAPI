@@ -15,6 +15,13 @@ const deleteArtistById = require("./controllers/artists/deleteArtistById");
 const getAllAlbums = require("./controllers/albums/getAllAlbums");
 const getAlbumById = require("./controllers/albums/getAlbumById");
 const postAlbum = require("./controllers/albums/postAlbum");
+const patchAlbumById = require("./controllers/albums/patchAlbumById");
+const deleteAlbumById = require("./controllers/albums/deleteAlbumById");
+const getAllSongs = require("./controllers/songs/getAllSongs");
+const getSongsById = require("./controllers/songs/getSongById");
+const postSong = require("./controllers/songs/postSong");
+const patchSongById = require("./controllers/songs/patchSongById");
+const deleteSongById = require("./controllers/songs/deleteSongById");
 
 const router = express.Router();
 
@@ -48,5 +55,21 @@ router.get("/albums", getAllAlbums);
 router.get("/album/:albumId", getAlbumById);
 
 router.post("/album", postAlbum);
+
+router.patch("/album/:albumId", patchAlbumById);
+
+router.delete("/album/:albumId", deleteAlbumById);
+
+// Songs
+
+router.get("/songs", getAllSongs);
+
+router.get("/song/:songId", getSongsById);
+
+router.post("/song", postSong);
+
+router.patch("/song/:songId", patchSongById);
+
+router.delete("/song/:songId", deleteSongById);
 
 module.exports = router;

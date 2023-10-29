@@ -43,16 +43,16 @@ CREATE TABLE users(
 DROP TABLE IF EXISTS artists;
 CREATE TABLE artists(
   artist_id int AUTO_INCREMENT PRIMARY KEY,
-  artistName VARCHAR(100) NOT NULL,
-  artistGenre VARCHAR(100) NOT NULL
+  artist_name VARCHAR(100) NOT NULL,
+  artist_genre VARCHAR(100) NOT NULL
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 DROP TABLE IF EXISTS albums;
 CREATE TABLE albums(
   album_id int AUTO_INCREMENT PRIMARY KEY,
   artist_id int NOT NULL,
-  albumName VARCHAR(100) NOT NULL,
-  albumYear int NOT NULL,
+  album_name VARCHAR(100) NOT NULL,
+  album_year int NOT NULL,
   FOREIGN KEY (artist_id) REFERENCES artists(artist_id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -62,9 +62,9 @@ CREATE TABLE songs(
   song_id int AUTO_INCREMENT PRIMARY KEY,
   artist_id int NOT NULL,
   album_id int NOT NULL,
-  SongName VARCHAR(100) NOT NULL,
-  SongGenre varchar(100) NOT NULL,
-  SongYear int NOT NULL,
+  song_name VARCHAR(100) NOT NULL,
+  song_genre varchar(100) NOT NULL,
+  song_year int NOT NULL,
   FOREIGN KEY (artist_id) REFERENCES artists(artist_id),
   FOREIGN KEY (album_id) REFERENCES albums(album_id)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE utf8mb4_unicode_ci;
