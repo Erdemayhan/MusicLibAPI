@@ -76,7 +76,7 @@
     "chalk": "^2.4.2",
     "chipper": "^1.7.2",
     "db-migrate": "^0.11.11",
-    "db-migrate-mysql": "^1.1.10",
+    "db-migrate-mysql": "^2.3.2",
     "deep-equal-in-any-order": "^1.0.21",
     "eslint": "^7.7.0",
     "eslint-config-airbnb-base": "^14.2.0",
